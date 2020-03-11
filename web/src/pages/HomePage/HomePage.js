@@ -1,4 +1,5 @@
 import BlogLayout from 'src/layouts/BlogLayout'
+import HotTipsCell from 'src/components/HotTipsCell'
 
 const HomePage = () => {
   return (
@@ -17,6 +18,22 @@ const HomePage = () => {
             </a>
             .
           </h1>
+        </div>
+      </div>
+
+      <div className="row">
+        <div className="space-1">
+          <h2 className="bold">{`latest hot tips:`}</h2>
+        </div>
+      </div>
+
+      <div className="row">
+        <div className="space-1">
+          <ul className="link-list">
+            <li>
+              <HotTipsCell />
+            </li>
+          </ul>
         </div>
       </div>
 
