@@ -129,7 +129,6 @@ const HomePage = () => {
           </ul>
         </div>
       </div>
-      <div data-netlify-identity-button>Login with Netlify Identity</div>
     </BlogLayout>
   )
 }
