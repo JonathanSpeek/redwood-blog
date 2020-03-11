@@ -10,3 +10,15 @@
   from = "/*"
   to = "/index.html"
   status = 200
+
+[[redirects]]
+  from = "/admin/tips/*/edit"
+  to = "/admin/tips/:splat/edit"
+  status = 200!
+  conditions = {Language = ["en"], Country = ["US"], Role = ["admin"]}
+
+[[redirects]]
+  from = "/admin/tips/*"
+  to = "/admin/tips/:splat"
+  status = 200!
+  conditions = {Language = ["en"], Country = ["US"], Role = ["admin"]}
