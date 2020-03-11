@@ -5,6 +5,7 @@ import FatalErrorPage from 'src/pages/FatalErrorPage'
 import Routes from 'src/Routes'
 
 import './index.css'
+import './spacegrid.min.css'
 
 ReactDOM.render(
   <FatalErrorBoundary page={FatalErrorPage}>
