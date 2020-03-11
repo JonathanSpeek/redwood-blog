@@ -1,12 +1,10 @@
-import HotTip from 'src/components/HotTip'
+import HotTip from 'src/components/Blog/HotTip'
 
 export const QUERY = gql`
-  query($id: Int!) {
-    tip(id: $id) {
+  query {
+    tips {
       id
       title
-      body
-      createdAt
     }
   }
 `
@@ -17,6 +15,6 @@ export const Empty = () => <div>Empty</div>
 
 export const Failure = ({ error }) => <div>Error: {error.message}</div>
 
-export const Success = ({ tip }) => {
-  return <HotTip tip={tip} />
+export const Success = ({ tips }) => {
+  return tips.map((tip) => <HotTip key={tip.id} tip={tip} />)
 }

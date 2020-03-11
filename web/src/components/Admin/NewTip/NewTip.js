@@ -1,6 +1,6 @@
 import { useMutation } from '@redwoodjs/web'
 import { navigate, routes } from '@redwoodjs/router'
-import TipForm from 'src/components/TipForm'
+import TipForm from 'src/components/Admin/TipForm'
 
 const CREATE_POST_MUTATION = gql`
   mutation CreateTipMutation($input: TipInput!) {

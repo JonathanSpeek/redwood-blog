@@ -1,6 +1,6 @@
 import { useMutation } from '@redwoodjs/web'
 import { navigate, routes } from '@redwoodjs/router'
-import TipForm from 'src/components/TipForm'
+import TipForm from 'src/components/Admin/TipForm'
 
 export const QUERY = gql`
   query FIND_POST_BY_ID($id: Int!) {

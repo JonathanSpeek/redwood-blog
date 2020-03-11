@@ -54,10 +54,7 @@ const TipsList = ({ tips }) => {
         </thead>
         <tbody>
           {tips.map((tip) => (
-            <tr
-              key={tip.id}
-              className="odd:bg-gray-100 even:bg-white border-t"
-            >
+            <tr key={tip.id} className="odd:bg-gray-100 even:bg-white border-t">
               <td className="p-3">{truncate(tip.id)}</td>
               <td className="p-3">{truncate(tip.title)}</td>
               <td className="p-3">{truncate(tip.body)}</td>

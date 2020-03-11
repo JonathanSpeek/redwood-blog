@@ -1,4 +1,4 @@
-import Tip from 'src/components/Tip'
+import Tip from 'src/components/Admin/Tip'
 
 export const QUERY = gql`
   query FIND_POST_BY_ID($id: Int!) {

@@ -1,5 +1,5 @@
 import TipsLayout from 'src/layouts/TipsLayout'
-import TipCell from 'src/components/TipCell'
+import TipCell from 'src/components/Blog/TipCell'
 
 const TipPage = ({ id }) => {
   return (

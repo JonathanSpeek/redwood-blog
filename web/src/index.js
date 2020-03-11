@@ -1,5 +1,6 @@
 import ReactDOM from 'react-dom'
 import { RedwoodProvider, FatalErrorBoundary } from '@redwoodjs/web'
+import netlifyIdentity from 'netlify-identity-widget'
 import FatalErrorPage from 'src/pages/FatalErrorPage'
 
 import Routes from 'src/Routes'
@@ -7,6 +8,11 @@ import Routes from 'src/Routes'
 import './scaffold.css'
 import './index.css'
 import './spacegrid.min.css'
+
+if (process.env.USE_AUTHENTICATION === 'true') {
+  window.netlifyIdentity = netlifyIdentity
+  netlifyIdentity.init()
+}
 
 ReactDOM.render(
   <FatalErrorBoundary page={FatalErrorPage}>

@@ -1,5 +1,5 @@
 import BlogLayout from 'src/layouts/BlogLayout'
-import HotTipsCell from 'src/components/HotTipsCell'
+import HotTipsCell from 'src/components/Blog/HotTipsCell'
 
 const HomePage = () => {
   return (
