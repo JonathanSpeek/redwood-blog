@@ -1,4 +1,4 @@
-import AdminLayout from 'src/layouts/Admin/AdminLayout'
+import AdminLayout from 'src/layouts/AdminLayout/AdminLayout'
 import EditTipCell from 'src/components/Admin/EditTipCell'
 
 const EditTipPage = ({ id }) => {

@@ -1,4 +1,4 @@
-import AdminLayout from 'src/layouts/Admin/AdminLayout'
+import AdminLayout from 'src/layouts/AdminLayout/AdminLayout'
 import NewTip from 'src/components/Admin/NewTip'
 
 const NewTipPage = () => {

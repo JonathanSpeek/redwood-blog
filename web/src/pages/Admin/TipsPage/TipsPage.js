@@ -1,4 +1,4 @@
-import AdminLayout from 'src/layouts/Admin/AdminLayout'
+import AdminLayout from 'src/layouts/AdminLayout/AdminLayout'
 import TipsCell from 'src/components/Admin/TipsCell'
 
 const TipsPage = () => {

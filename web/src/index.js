@@ -9,7 +9,9 @@ import './scaffold.css'
 import './index.css'
 import './spacegrid.min.css'
 
-if (process.env.USE_AUTHENTICATION === 'true') {
+const isAuthEnabled = true
+
+if (isAuthEnabled) {
   window.netlifyIdentity = netlifyIdentity
   netlifyIdentity.init()
 }
