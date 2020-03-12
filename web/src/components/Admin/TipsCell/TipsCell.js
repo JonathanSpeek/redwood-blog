@@ -1,5 +1,5 @@
 import { Link, routes } from '@redwoodjs/router'
-import Tips from 'src/components/Blog/Tips'
+import Tips from 'src/components/Admin/Tips'
 
 export const QUERY = gql`
   query POSTS {
