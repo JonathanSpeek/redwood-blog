@@ -6,9 +6,11 @@ const HotTip = ({ tip }) => {
       {tip.body ? (
         <h2>{tip.title}</h2>
       ) : (
-        <Link key={tip.id} to={routes.hotTip({ id: tip.id })}>
-          {tip.title}
-        </Link>
+        <li>
+          <Link key={tip.id} to={routes.hotTip({ id: tip.id })}>
+            {tip.title}
+          </Link>
+        </li>
       )}
       {tip.body && (
         <div className="row">

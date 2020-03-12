@@ -30,9 +30,7 @@ const HomePage = () => {
       <div className="row">
         <div className="space-1">
           <ul className="link-list">
-            <li>
-              <HotTipsCell />
-            </li>
+            <HotTipsCell />
           </ul>
         </div>
       </div>
