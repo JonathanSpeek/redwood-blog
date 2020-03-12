@@ -64,7 +64,7 @@ const TipsList = ({ tips }) => {
                   <ul>
                     <li className="inline-block">
                       <Link
-                        to={routes.tip({ id: tip.id })}
+                        to={routes.hotTip({ id: tip.id })}
                         title={'Show tip ' + tip.id + ' detail'}
                         className="text-xs bg-gray-100 text-gray-600 hover:bg-gray-600 hover:text-white rounded-sm px-2 py-1 uppercase font-semibold tracking-wide"
                       >
@@ -73,7 +73,7 @@ const TipsList = ({ tips }) => {
                     </li>
                     <li className="inline-block">
                       <Link
-                        to={routes.editTip({ id: tip.id })}
+                        to={routes.adminEdit({ id: tip.id })}
                         title={'Edit tip ' + tip.id}
                         className="text-xs bg-gray-100 text-blue-600 hover:bg-blue-600 hover:text-white rounded-sm px-2 py-1 uppercase font-semibold tracking-wide"
                       >
